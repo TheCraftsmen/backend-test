@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    volumes:
+    - mealdelivery:/var/lib/postgresql/data
+  web:
+    build: ./backend
+    volumes:
+      - ./backend:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    command: bash -c "./wait-for-it.sh db:5432  && python manage.py crontab add && python3 manage.py runserver 0.0.0.0:8000"
+
+volumes:
+  mealdelivery:
