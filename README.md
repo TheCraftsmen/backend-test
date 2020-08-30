@@ -1,10 +1,4 @@
-# Cornershop's Backend Test 
-
-This technical test requires the design and implementation (using Django) of a basic management system to coordinate the meal delivery for Cornershop employees.
-
-## Before you begin
-
-You will need to fork this project and invite the following users as collaborators: @ignaciohermosilla @lbenitez000 @pedroburon @royarzun @afgonzalezgarcia @dongraft @argenisfd y @omenar.
+# Backend Test
 
 ## Description
 
